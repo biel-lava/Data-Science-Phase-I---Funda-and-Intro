@@ -29,7 +29,7 @@ plt.show()
 '''
 
 # Modifying line graph
-#'''
+'''
 
 import matplotlib.pyplot as plt # create an alias para hindi na ulit ulitin yung name ng package
 
@@ -47,5 +47,54 @@ sq.set_xlabel("Value", fontsize = 14)
 sq.set_ylabel("Square", fontsize = 14)
 
 plt.show()
+
+'''
+
+# Using Built-in Styles
+'''
+
+import matplotlib.pyplot as plt # create an alias para hindi na ulit ulitin yung name ng package
+
+square = [] # squares of the numbers
+
+for num in range(11):
+    square.append(num*num)
+plt.style.use('dark_background')
+
+fig, sq = plt.subplots()
+
+sq.plot(square, linewidth = 3) # increases the thickness of the line
+
+sq.set_title("Square of Numbers", fontsize = 24)
+sq.set_xlabel("Value", fontsize = 14)
+sq.set_ylabel("Square", fontsize = 14)
+
+plt.show()
+
+'''
+
+# Using scatter()
+
+#'''
+import matplotlib.pyplot as plt # create an alias para hindi na ulit ulitin yung name ng package
+
+raw = []
+square = [] # squares of the numbers
+
+for num in range(11):
+    raw.append(num)
+    square.append(num*num)
+plt.style.use('dark_background')
+
+fig, sq = plt.subplots()
+
+sq.scatter(raw, square) # syntax ay scatter(x-coordinate, y-coordinate)
+
+sq.set_title("Square of Numbers", fontsize = 24)
+sq.set_xlabel("Value", fontsize = 14)
+sq.set_ylabel("Square", fontsize = 14)
+
+plt.show()
+
 
 #'''

@@ -10,7 +10,7 @@ Topics:
 '''
 
 # Play 1: Plotting simple lie graph
-'''
+#'''
 import matplotlib.pyplot as plt # create an alias para hindi na ulit ulitin yung name ng package
 
 raw = [] # raw numbers only
@@ -21,6 +21,7 @@ for num in range(11):
     raw.append(num)
     square.append(num*num)
     cube.append(num*num*num)
+plt.style.use('dark_background')
 
 fig, rw = plt.subplots()
 fig, sq = plt.subplots()
@@ -32,10 +33,10 @@ cb.plot(cube)
 
 plt.show()
 
-'''
+#'''
 
 # Play 2: Using the full syntax of plot()
-
+'''
 import matplotlib.pyplot as plt
 
 raw = [1, 3, 4, 8, 15, 17, 19, 25, 37, 38]
@@ -46,3 +47,5 @@ for num in raw:
 
 plt.plot(raw, square)
 plt.show()
+
+'''
