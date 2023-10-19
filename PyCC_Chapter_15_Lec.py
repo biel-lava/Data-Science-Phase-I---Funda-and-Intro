@@ -75,7 +75,7 @@ plt.show()
 
 # Using scatter()
 
-#'''
+'''
 import matplotlib.pyplot as plt # create an alias para hindi na ulit ulitin yung name ng package
 
 raw = []
@@ -96,5 +96,27 @@ sq.set_ylabel("Square", fontsize = 14)
 
 plt.show()
 
+
+'''
+
+# Using list comprehension with scatter()
+
+#'''
+import matplotlib.pyplot as plt # create an alias para hindi na ulit ulitin yung name ng package
+
+raw = [x for x in range(0, 26)] # 
+square = [ y**2 for y in raw] # squares of the numbers using the syntax 'y**'
+
+plt.style.use('dark_background')
+
+fig, sq = plt.subplots()
+
+sq.scatter(raw, square, s = 25) # syntax ay scatter(x-coordinate, y-coordinate)
+
+sq.set_title("Square of Numbers", fontsize = 24)
+sq.set_xlabel("Value", fontsize = 14)
+sq.set_ylabel("Square", fontsize = 14)
+
+plt.show()
 
 #'''

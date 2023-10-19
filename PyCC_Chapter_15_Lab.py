@@ -10,7 +10,7 @@ Topics:
 '''
 
 # Play 1: Plotting simple lie graph
-#'''
+'''
 import matplotlib.pyplot as plt # create an alias para hindi na ulit ulitin yung name ng package
 
 raw = [] # raw numbers only
@@ -33,7 +33,7 @@ cb.plot(cube)
 
 plt.show()
 
-#'''
+'''
 
 # Play 2: Using the full syntax of plot()
 '''
@@ -49,3 +49,37 @@ plt.plot(raw, square)
 plt.show()
 
 '''
+
+# Problem # 1: Cubes
+
+#'''
+import matplotlib.pyplot as plt
+
+raw = [x for x in range(0,5001)]
+square = [y**2 for y in raw]
+cube = [z**3 for z in raw]
+
+plt.style.use('dark_background')
+
+fig, pl = plt.subplots(3)
+
+pl[0].plot(raw, raw, color = 'g')
+pl[1].plot(raw, square, color = 'c')
+pl[2].plot(raw, cube, color = 'y')
+
+pl[0].set_title("Raw Numbers", fontsize = 14)
+pl[0].set_xlabel("Value", fontsize = 10)
+pl[0].set_ylabel("Value", fontsize = 10)
+
+pl[1].set_title("Square of Numbers", fontsize = 14)
+pl[1].set_xlabel("Value", fontsize = 10)
+pl[1].set_ylabel("Squares", fontsize = 10)
+
+pl[2].set_title("Cube of Numbers", fontsize = 14)
+pl[2].set_xlabel("Value", fontsize = 10)
+pl[2].set_ylabel("Cubes", fontsize = 10)
+
+
+plt.show()
+
+#'''
