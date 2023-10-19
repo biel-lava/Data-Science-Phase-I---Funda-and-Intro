@@ -9,26 +9,42 @@ Topics:
     3. Rolling Dice
 '''
 
-# Plotting simple lie graph
-#'''
+# 1. Plotting simple lie graph
+
+# Most basic line graph
+'''
 import matplotlib.pyplot as plt # create an alias para hindi na ulit ulitin yung name ng package
 
-raw = [] # raw numbers only
-square = [] # squares of the raw numbers
-cube = [] # subes of the raw numbers
+square = [] # squares of the numbers
 
 for num in range(11):
-    raw.append(num)
     square.append(num*num)
-    cube.append(num*num*num)
 
-fig, rw = plt.subplots()
 fig, sq = plt.subplots()
-fig, cb = plt.subplots()
 
-rw.plot(raw)
 sq.plot(square)
-cb.plot(cube)
+
+plt.show()
+
+'''
+
+# Modifying line graph
+#'''
+
+import matplotlib.pyplot as plt # create an alias para hindi na ulit ulitin yung name ng package
+
+square = [] # squares of the numbers
+
+for num in range(11):
+    square.append(num*num)
+
+fig, sq = plt.subplots()
+
+sq.plot(square, linewidth = 3) # increases the thickness of the line
+
+sq.set_title("Square of Numbers", fontsize = 24)
+sq.set_xlabel("Value", fontsize = 14)
+sq.set_ylabel("Square", fontsize = 14)
 
 plt.show()
 
