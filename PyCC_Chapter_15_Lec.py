@@ -9,7 +9,7 @@ Topics:
     3. Rolling Dice
 '''
 
-# 1. Plotting simple lie graph
+# PLOTTING SIMPLE LINE GRAPH
 
 # Most basic line graph
 '''
@@ -101,7 +101,7 @@ plt.show()
 
 # Using list comprehension with scatter()
 
-#'''
+'''
 import matplotlib.pyplot as plt # create an alias para hindi na ulit ulitin yung name ng package
 
 raw = [x for x in range(0, 26)] # 
@@ -119,4 +119,8 @@ sq.set_ylabel("Square", fontsize = 14)
 
 plt.show()
 
-#'''
+'''
+
+# RANDOM WALKS
+
+# 
