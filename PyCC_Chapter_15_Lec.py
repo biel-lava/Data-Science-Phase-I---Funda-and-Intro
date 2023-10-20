@@ -123,4 +123,27 @@ plt.show()
 
 # RANDOM WALKS
 
-# 
+# Using the Mk1 random_walk
+
+import matplotlib.pyplot as plt
+
+from random_walk import RandomWalk # import the class from the random_walk script
+
+rw_trial = RandomWalk() # create a RandomWalk instance 
+
+rw_trial.fill_walk() # call the fill_walk() method
+
+
+plt.style.use('dark_background')
+
+fig, rw = plt.subplots()
+
+rw.scatter(rw_trial.x_values, rw_trial.y_values, s = 25) # syntax ay scatter(x-coordinate, y-coordinate)
+
+rw.set_title("Random Walks Mk 1", fontsize = 24)
+rw.set_xlabel("x-value", fontsize = 14)
+rw.set_ylabel("y-value", fontsize = 14)
+
+plt.show()
+
+
