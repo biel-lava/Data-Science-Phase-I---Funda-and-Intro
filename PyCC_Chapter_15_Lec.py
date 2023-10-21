@@ -124,6 +124,7 @@ plt.show()
 # RANDOM WALKS
 
 # Using the Mk1 random_walk
+'''
 
 import matplotlib.pyplot as plt
 
@@ -145,5 +146,9 @@ rw.set_xlabel("x-value", fontsize = 14)
 rw.set_ylabel("y-value", fontsize = 14)
 
 plt.show()
+'''
+
+# ROLLING DICE
+
 
 

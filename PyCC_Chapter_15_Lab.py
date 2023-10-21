@@ -86,7 +86,7 @@ plt.show()
 
 # Problem # 3: Molecular motion
 
-#'''
+'''
 import matplotlib.pyplot as plt
 
 from random_walk import RandomWalk
@@ -108,4 +108,4 @@ rw.set_ylabel("y-value", fontsize = 14)
 
 plt.show()
 
-#'''
+'''
