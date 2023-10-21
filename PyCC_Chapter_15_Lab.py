@@ -52,7 +52,7 @@ plt.show()
 
 # Problem # 1: Cubes
 
-#'''
+'''
 import matplotlib.pyplot as plt
 
 raw = [x for x in range(0,5001)]
@@ -79,6 +79,32 @@ pl[2].set_title("Cube of Numbers", fontsize = 14)
 pl[2].set_xlabel("Value", fontsize = 10)
 pl[2].set_ylabel("Cubes", fontsize = 10)
 
+
+plt.show()
+
+'''
+
+# Problem # 3: Molecular motion
+
+#'''
+import matplotlib.pyplot as plt
+
+from random_walk import RandomWalk
+
+rw_trial = RandomWalk() # create a RandomWalk instance 
+
+rw_trial.fill_walk() # call the fill_walk() method
+
+
+plt.style.use('dark_background')
+
+fig, rw = plt.subplots()
+
+rw.plot(rw_trial.x_values, rw_trial.y_values, linewidth = 1) # syntax ay scatter(x-coordinate, y-coordinate)
+
+rw.set_title("Molecular Motion", fontsize = 15)
+rw.set_xlabel("x-value", fontsize = 14)
+rw.set_ylabel("y-value", fontsize = 14)
 
 plt.show()
 

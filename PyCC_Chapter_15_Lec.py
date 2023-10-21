@@ -140,7 +140,7 @@ fig, rw = plt.subplots()
 
 rw.scatter(rw_trial.x_values, rw_trial.y_values, s = 25) # syntax ay scatter(x-coordinate, y-coordinate)
 
-rw.set_title("Random Walks Mk 1", fontsize = 24)
+rw.set_title("Random Walks Mk 1", fontsize = 15)
 rw.set_xlabel("x-value", fontsize = 14)
 rw.set_ylabel("y-value", fontsize = 14)
 
